@@ -22,6 +22,7 @@ jobs:
         run: npm install
 
       - name: Run tests
+      - run: chmod +x node_modules/.bin/jest   
         run: npm test
 
   deploy:
